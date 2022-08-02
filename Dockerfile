@@ -85,7 +85,6 @@ RUN addgroup --system --gid ${FOUNDRY_UID} foundry \
   tzdata \
   && npm install && echo ${VERSION} > image_version.txt
 
-VOLUME ["/data"]
 # HTTP Server
 EXPOSE 30000/TCP
 # TURN Server
